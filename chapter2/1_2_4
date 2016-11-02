@@ -1,0 +1,17 @@
+if a == 0
+	if b == 0
+		if c != 0
+			print "无解"
+		else
+			print "x可以为任意实数"
+	else
+		print "x = -c / b"
+else
+	tmp = b * b - 4 * a * c;
+	if tmp < 0
+		print "无解"
+	else if tmp == 0
+		print "x = -b / 2 / a"
+	else
+		print "x1 = (-b - sqrt(tmp)) / 2a"
+		print "x2 = (-b + sqrt(tmp)) / 2a"
